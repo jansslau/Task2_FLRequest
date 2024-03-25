@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPDLC Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cockpit">
+    <img src="NAVINDEX1.png" alt="NAVINDEX1" id="NAVINDEX1">
+    <div id="button-container">
+      <button id="button1" style="top: 12.5%; left: 2%;" onclick="handleButtonClick(1)">Button 1</button>
+      <button id="button2" style="top: 18.5%; left: 2%;" onclick="handleButtonClick(2)">Button 2</button>
+      <button id="button3" style="top: 24.5%; left: 2%;" onclick="handleButtonClick(3)">Button 3</button>
+      <button id="button4" style="top: 30%; left: 2%;" onclick="handleButtonClick(4)">Button 4</button>
+      <button id="button5" style="top: 36%; left: 2%;" onclick="handleButtonClick(5)">Button 5</button>
+      <button id="button6" style="top: 42%; left: 2%;" onclick="handleButtonClick(6)">Button 6</button>
+      <button id="button7" style="top: 12.5%; left: 91%;" onclick="handleButtonClick(7)">Button 7</button>
+      <button id="button8" style="top: 18.5%; left: 91%;" onclick="handleButtonClick(8)">Button 8</button>
+      <button id="button9" style="top: 24.5%; left: 91%;" onclick="handleButtonClick(9)">Button 9</button>
+      <button id="button10" style="top: 30%; left: 91%;" onclick="handleButtonClick(10)">Button 10</button>
+      <button id="button11" style="top: 36%; left: 91%;" onclick="handleButtonClick(11)">Button 11</button>
+      <button id="button12" style="top: 42%; left: 91%;" onclick="handleButtonClick(12)">Button 12</button>
+      <button id="button13" style="top: 54%; left: 29%;" onclick="handleButtonClick(13)">Previous</button>
+      <button id="button14" style="top: 60%; left: 29%;" onclick="handleButtonClick(14)">Next</button>
+    </div>
+  </div>
+  
+  <div id="sidebar">
+    <div id="simulation-info" style="display: none;"> 
+      <p id="simulation-info-text">As soon as you approach the next sector the "NEXT CTR" will be automatically displayed. Click on the button below to start the simulation.</p>
+      <button id="start-simulation" onclick="startSimulation()">Start</button>
+    </div>
+    <div id="waiting-message" style="display: none;">
+      <p>We are now waiting for a response from ATC</p>
+    </div>
+     <div id="sidebar-message" style="display: none;">
+     <p>"ATC has send the response 'Standby' It is best practice to display the ATC LOG page during any CPDLC idle time. Push the corresponding button in order to wait for the answer from ATC"
+</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

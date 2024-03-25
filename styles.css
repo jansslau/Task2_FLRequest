@@ -1,0 +1,53 @@
+#cockpit {
+  position: relative;
+  max-width: 100%; 
+}
+
+#NAVINDEX1 {
+  display: block; 
+  width: 80%; 
+}
+
+#sidebar {
+  background-color: lightgrey; 
+  width: 20%; 
+  height: 100%; 
+  float: right; 
+}
+
+#button-container {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 80%; 
+  height: 100%; 
+}
+
+button {
+  position: absolute;
+  background-color: transparent; 
+  border: none;
+  width: 7%; 
+  height: 3%;
+  cursor: pointer;
+}
+#sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%; 
+  height: 100%; 
+  background-color: lightgray; 
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+#simulation-info {
+  margin: 20px 0; 
+}
+
+#start-simulation {
+  width: 100px;
+    background-color: azure;
+  height: 40px;
+}
